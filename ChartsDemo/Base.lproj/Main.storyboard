@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Fmv-ri-kg9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="0KO-sP-Zwt">
+            <objects>
+                <viewController id="nFe-I5-lot" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ego-Bv-0eN"/>
+                        <viewControllerLayoutGuide type="bottom" id="f7g-SV-205"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Idi-Qy-D5E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="h0S-6M-1lB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Qk-Bk-0Rk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="33z-zP-xyJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndI-IA-rwe">
+                                            <rect key="frame" x="0.0" y="519" width="375" height="148"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <state key="normal" title="Draw BarChart">
+                                                <color key="titleColor" red="0.9934343695640564" green="0.23873308300971985" blue="0.030319022014737129" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="jQX-SD-GUe" kind="show" id="ltJ-ez-69V"/>
+                                            </connections>
+                                        </button>
+                                        <imageView userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bar" translatesAutoresizingMaskIntoConstraints="NO" id="5Yt-s2-A9F">
+                                            <rect key="frame" x="8" y="554" width="91" height="85"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <button opaque="NO" alpha="0.55000000000000004" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hR-Ae-5WI">
+                                            <rect key="frame" x="0.0" y="371" width="375" height="146"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <state key="normal" title="Draw LineChart">
+                                                <color key="titleColor" red="0.9934343695640564" green="0.23873308300971985" blue="0.030319022014737129" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="xhv-Hz-rU4"/>
+                                            </connections>
+                                        </button>
+                                        <imageView userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="pWv-70-Dny">
+                                            <rect key="frame" x="8" y="402" width="91" height="89"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Drawing Charts using Charts Library" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33e-fk-95F">
+                                            <rect key="frame" x="0.0" y="64" width="375" height="56"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                            <color key="textColor" red="0.79414480924606323" green="0.065330840647220612" blue="0.83089554309844971" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="highlightedColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Smiley" translatesAutoresizingMaskIntoConstraints="NO" id="7Sd-GG-gfR">
+                                            <rect key="frame" x="77" y="139" width="220" height="190"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.44359546899795532" green="0.65512305498123169" blue="0.91112083196640015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6H0-gj-MLs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lVo-XB-iXP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1384.8" y="129.08545727136433"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ChartsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="Zkl-dh-dAe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tFH-xB-Rpw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="0PI-uG-Wau">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vKR-B5-lQs" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="128" width="375" height="539"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter graph value" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lCJ-Nh-8Cg">
+                                <rect key="frame" x="16" y="84" width="179" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4le-5t-nNt">
+                                <rect key="frame" x="219" y="84" width="140" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="C6x-Oj-FFP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Show Graph">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V2H-qW-92M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.44359546899795532" green="0.65512305498123169" blue="0.91112083196640015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lCJ-Nh-8Cg" firstAttribute="top" secondItem="4le-5t-nNt" secondAttribute="top" id="HoS-Ny-26X"/>
+                            <constraint firstItem="vKR-B5-lQs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="R0j-Rl-5ik"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4le-5t-nNt" secondAttribute="trailing" id="SsV-81-DCS"/>
+                            <constraint firstItem="lCJ-Nh-8Cg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="UmX-qG-S47"/>
+                            <constraint firstItem="lCJ-Nh-8Cg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aO2-if-zz8"/>
+                            <constraint firstItem="4le-5t-nNt" firstAttribute="leading" secondItem="lCJ-Nh-8Cg" secondAttribute="trailing" constant="24" id="chx-gA-Ytw"/>
+                            <constraint firstItem="vKR-B5-lQs" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="il1-Dh-ot9"/>
+                            <constraint firstAttribute="trailing" secondItem="vKR-B5-lQs" secondAttribute="trailing" id="tfe-q4-xsj"/>
+                            <constraint firstItem="vKR-B5-lQs" firstAttribute="top" secondItem="lCJ-Nh-8Cg" secondAttribute="bottom" constant="14" id="wvz-Ea-Tq0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chtChart" destination="vKR-B5-lQs" id="HTy-wn-JAe"/>
+                        <outlet property="txtTextBox" destination="lCJ-Nh-8Cg" id="O0c-w0-kNF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2082.4000000000001" y="129.98500749625188"/>
+        </scene>
+        <!--Bar Chart View Controller-->
+        <scene sceneID="Bds-XU-d94">
+            <objects>
+                <viewController id="jQX-SD-GUe" customClass="BarChartViewController" customModule="ChartsDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tiW-nT-GCz"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dtf-zW-QqQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CWu-8J-Zws">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="OiT-Hi-Hjf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eNE-QL-q1G">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="AeH-qt-fds">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6AQ-Ob-BW1" customClass="BarChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="132" width="375" height="535"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ldz-Fv-xnJ">
+                                <rect key="frame" x="220" y="84" width="139" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="139" id="WRl-MK-00F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Show Graph">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttontappedd:" destination="jQX-SD-GUe" eventType="touchUpInside" id="xUW-KF-w0b"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter graph value" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="suD-p6-J1d">
+                                <rect key="frame" x="16" y="84" width="187" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.44359546899795532" green="0.65512305498123169" blue="0.91112083196640015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="suD-p6-J1d" firstAttribute="top" secondItem="tiW-nT-GCz" secondAttribute="bottom" constant="20" id="76M-w0-cvO"/>
+                            <constraint firstItem="suD-p6-J1d" firstAttribute="leading" secondItem="CWu-8J-Zws" secondAttribute="leadingMargin" id="P5I-pj-Z6e"/>
+                            <constraint firstAttribute="trailing" secondItem="6AQ-Ob-BW1" secondAttribute="trailing" id="PJL-g7-jcl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ldz-Fv-xnJ" secondAttribute="trailing" id="QB0-fU-1Tx"/>
+                            <constraint firstItem="6AQ-Ob-BW1" firstAttribute="bottom" secondItem="Dtf-zW-QqQ" secondAttribute="top" id="Y2o-nX-el0"/>
+                            <constraint firstItem="suD-p6-J1d" firstAttribute="top" secondItem="Ldz-Fv-xnJ" secondAttribute="top" id="fVE-cQ-dKm"/>
+                            <constraint firstItem="6AQ-Ob-BW1" firstAttribute="top" secondItem="suD-p6-J1d" secondAttribute="bottom" constant="18" id="fvo-1i-jZs"/>
+                            <constraint firstItem="Ldz-Fv-xnJ" firstAttribute="leading" secondItem="suD-p6-J1d" secondAttribute="trailing" constant="17" id="p8Z-Gb-AqL"/>
+                            <constraint firstItem="6AQ-Ob-BW1" firstAttribute="leading" secondItem="CWu-8J-Zws" secondAttribute="leading" id="wR8-Oe-98e"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chartview" destination="6AQ-Ob-BW1" id="K0F-dA-6Ls"/>
+                        <outlet property="txtfield" destination="suD-p6-J1d" id="wEl-Vs-fKB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vry-bl-RTh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2756" y="123.68815592203899"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BEw-ry-KjB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fmv-ri-kg9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="urP-iZ-q7V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nFe-I5-lot" kind="relationship" relationship="rootViewController" id="wYq-I6-Lh0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uuj-HD-vnc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="445.60000000000002" y="129.08545727136433"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bar" width="265" height="190"/>
+        <image name="Smiley" width="1878" height="1920"/>
+        <image name="bg" width="1920" height="1222"/>
+        <image name="line" width="283" height="178"/>
+    </resources>
+</document>
